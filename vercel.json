@@ -1,0 +1,7 @@
+{
+  "crons": [{ "path": "/api/scheduled-post", "schedule": "0 9 * * *" }],
+  "rewrites": [
+    { "source": "/netlify/functions/:path*", "destination": "/api/:path*" },
+    { "source": "/.netlify/functions/:path*", "destination": "/api/:path*" }
+  ]
+}
