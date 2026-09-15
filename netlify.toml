@@ -5,6 +5,9 @@
 [functions]
   node_bundler = "esbuild"
 
+[functions."scheduled-post"]
+  schedule = "@daily"
+
 [[redirects]]
   from = "/callback"
   to = "/.netlify/functions/tiktok-callback"
