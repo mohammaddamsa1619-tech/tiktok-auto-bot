@@ -7,13 +7,3 @@
 
 [functions."scheduled-post"]
   schedule = "@daily"
-
-[[redirects]]
-  from = "/callback"
-  to = "/.netlify/functions/tiktok-callback"
-  status = 200
-
-[[redirects]]
-  from = "/auth"
-  to = "/.netlify/functions/tiktok-auth"
-  status = 200
