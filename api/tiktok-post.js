@@ -9,16 +9,11 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'video_url is missing' });
   }
 
-  // 1. إرسال استجابة فورية لـ n8n لمنع خطأ الـ Timeout
   res.status(200).json({ ok: true, message: "started" });
 
-  // 2. معالجة الفيديو أو إرساله لتيك توك في الخلفية
   try {
-    console.log("Starting background video processing for URL:", video_url);
-    
-    // ضع هنا الأكواد أو الطلبات الخاصة برفع الفيديو إلى تيك توك
-    
+    console.log("Processing video:", video_url);
   } catch (error) {
-    console.error("Error in background processing:", error);
+    console.error("Error:", error);
   }
 }
